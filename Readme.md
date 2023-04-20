@@ -1,3 +1,7 @@
-###This is just a readme file
+## This is a simple example project on Cucumber JS
 
-`let a = 100`
+### Usage
+1. Clone this repo and extract it
+2. Execute the command `npm install` to install dependencies
+3. To run the tests, execute the command `npm test`
+4. To generate the report, execute command `npm run report`
