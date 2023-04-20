@@ -1,0 +1,92 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "author-and-books;filter-the-book-from-the-book-store",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Filter the book from the book store",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "author"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Devil in the white city",
+                      "Erik Larson"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Lion,the Withc and the Wardrobe",
+                      "C.S.Lewis"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "In the Garden of Beasts",
+                      "Erik Larson"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have the following books in store",
+            "match": {
+              "location": "features/support/step_definitions/booksteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 410071
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I search for books by author 'Erik Larson'",
+            "match": {
+              "location": "features/support/step_definitions/booksteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I find 2 books",
+            "match": {
+              "location": "features/support/step_definitions/booksteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1157194
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "author-and-books",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Author and books",
+    "tags": [],
+    "uri": "features/books.feature"
+  }
+]
