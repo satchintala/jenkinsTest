@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Install Dependencies'
                 script{
-                    if (isUnix){
+                    if (isUnix()){
                         sh 'npm install'
                     }else{
                         bat 'npm install'
@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo 'Execute Tests'
                 script{
-                    if (isUnix){
+                    if (isUnix()){
                         sh 'npm test'
                     }else{
                         bat 'npm test'
@@ -30,7 +30,7 @@ pipeline {
             steps {
                 echo 'Run Report'
                 script{
-                    if (isUnix){
+                    if (isUnix()){
                         sh 'npm run report'
                     }else{
                         bat 'npm run report'
