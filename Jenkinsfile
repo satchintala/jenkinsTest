@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Install Dependencies'
                 script{
-                    if (isUnix())){
+                    if (isUnix()){
                         sh 'npm install'
                     }else{
                         bat 'npm install'
